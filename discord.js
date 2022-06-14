@@ -96,7 +96,7 @@ const discord = {
             await discord.page.waitFor(10000);
 
             async function initalStart () {
-                await discord.page.type('span[data-slate-object="text"]', "auto typer started.", {
+                await discord.page.type('span[data-slate-node="text"]', "auto typer started.", {
                     delay: 100
                 });
 
@@ -111,7 +111,7 @@ const discord = {
 
             async function randomWord () {
                 const random = words[Math.floor(Math.random() * words.length)]
-                await discord.page.type('span[data-slate-object="text"]', random, {
+                await discord.page.type('span[data-slate-node="text"]', random, {
                     delay: 100
                 });
 
